@@ -229,8 +229,6 @@ img[alt="Leah's Logo"]{
 
 /* Home Section */
 .home-content{
-    display: flex;
-    justify-content: space-between;
     padding: 6.5rem 6.5rem 10.5rem 7rem;
 }
 
