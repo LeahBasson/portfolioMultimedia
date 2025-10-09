@@ -6,65 +6,64 @@
     <title>Leah's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-   <nav class="navbar" aria-label="Main Navigation">
-    <!-- Logo -->
-    <a href="#home"><img src="images/logo.png" alt="Leah's Logo" class="logo"></a>
+  <header>
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Logo -->
+        <a href="#home"><img src="images/logo.png" alt="Leah's Logo" class="logo"></a>
 
-    <!-- Mobile hamburger -->
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+        <!-- Mobile hamburger -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
 
-    <!-- Nav menu -->
-    <div class="menu">
-      <a href="#home">
-        <img src="images/home.png" alt="Home Page Icon" class="menu-icons">
-        <img src="images/home-hover.png" alt="Home Page Icon Hover" class="menu-icons-hover">
-        <img src="images/home-large-hover.png" alt="Home Page Icon Large Hover" class="menu-icons-large-hover">
-        Home
-      </a>
-      <a href="#about">
-        <img src="images/about.png" alt="About Page Icon" class="menu-icons">
-        <img src="images/about-hover.png"  alt="About Page Icon Hover" class="menu-icons-hover">
-        <img src="images/about-large-hover.png" alt="About Page Icon Large Hover" class="menu-icons-large-hover">
-        About
-      </a>
-      <a href="#portfolio">
-        <img src="images/briefcase.png" alt="Portfolio Page Icon" class="menu-icons">
-        <img src="images/briefcase-hover.png" alt="Portfolio Page Icon Hover" class="menu-icons-hover">
-        <img src="images/briefcase-large-hover.png" alt="Portfolio Page Icon Large Hover" class="menu-icons-large-hover">
-        Portfolio
-     </a>
-      <a href="#contact">
-        <img src="images/contact.png" alt="Contact Page Icon" class="menu-icons">
-        <img src="images/contact-hover.png" alt="Contact Page Icon Hover" class="menu-icons-hover">
-        <img src="images/contact-large-hover.png" alt="Contact Page Icon Large Hover" class="menu-icons-large-hover">
-        Contact
-    </a>
+        <!-- Nav menu -->
+        <div class="menu">
+          <a href="#home">
+          <i class="fa-solid fa-house"></i>
+          Home
+          </a>
+          <a href="#about">
+          <i class="fa-solid fa-circle-info"></i>
+            About
+          </a>
+          <a href="#portfolio">
+          <i class="fa-solid fa-briefcase"></i>
+          Portfolio
+          </a>
+          <a href="#contact">
+            <i class="fa-solid fa-square-phone"></i>
+            Contact
+          </a>
+    </div>  
+
+      </nav>
     </div>
-  </nav>
+  </header>
+
+
 
   <main>
     <section class="container" id="home">
         <div class="home-content">
-            
             <h1>Hi, I am Leah Basson.</h1>
             <h2>I am a <span>Web developer</span>.</h2>
             <h2>Building your dream <span>pixel</span><br>by <span>pixel</span>!</h2>
             <div class="social-icons">
                 <a href="#">
-                    <img src="images/email.png" alt="Email Icon" class="social-icon">
+                    <i class="fa-solid fa-envelope"></i>
                 </a>
                 <a href="#">
-                    <img src="images/linkedin.png" alt="LinkedIn Icon" class="social-icon">
+                    <i class="fa-brands fa-github"></i>
                 </a>
                 <a href="#">
-                    <img src="images/github.png" alt="Github Icon" class="social-icon">
+                    <i class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
             
@@ -85,7 +84,7 @@
     <section id="about">
 
         <div class="about-content">
-            
+            <h1>About</h1>
             <div class="about-text">
             <img src="images/leah.png" alt="Picture of Leah Basson" class="about-image">
             <p>Inspired by my love for technology and Marvel movies, I believe in the limitless possibilities of technology. In 2023, I pursued web development at the College of Cape Town. Despite challenges with math in high school, I worked hard on each project, consistently submitting on time and often achieving top rankings. After College of Cape Town I decided to study further at Life Choices Coding Academy as they offered new languages and professional development. During my time at Life Choices I remained diligent and focused and maintained my rank as top achiever. Currently, I am a student at Cape Penisula University of Technology<br><br>With a strong foundation in web design principles, UX/UI, and coding. I focus on building websites that are not only visually appealing but also user-friendly and responsive. I aim to deliver tailored web solutions that enhance user experience and meet the unique needs of each project, ensuring that every interaction is effortless and impactful.</p>

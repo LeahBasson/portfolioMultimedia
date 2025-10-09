@@ -9,7 +9,31 @@
 }
 
 body{
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+:root{
+    --primary-color: #382cbc;
+    --secondary-color: #292256;
+    --bg-color: #0c0a13;
+    --accent-color: #FF5EEA;
+    --text-color: #ffffff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-block: 8rem;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* Navbar */
@@ -18,11 +42,8 @@ body{
     justify-content: space-between; /*space between logo and links*/
     align-items: center; /*vertically center items*/
     padding: 1rem;
-    background: #382cbc;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background: var(--primary-color);
+    color: var(--text-color);  
 }
 
 img[alt="Leah's Logo"]{
@@ -42,7 +63,7 @@ img[alt="Leah's Logo"]{
 .hamburger span {
     display: block;
     height: 3px;
-    background: white;
+    background: var(--text-color);
     border-radius: 2px;
 }
 
@@ -55,8 +76,8 @@ img[alt="Leah's Logo"]{
 .menu {
     display: none;
     flex-direction: column;
-    background: #0c0a13;
-    border: 1px solid #FF5EEA;
+    background: var(--bg-color);
+    border: 1px solid var(--accent-color);
     position: absolute;
     top: 100px;
     right: 1rem;
@@ -69,38 +90,22 @@ img[alt="Leah's Logo"]{
     display: flex;
     align-items: center;
     padding: 1rem;
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 .menu a:hover{
-    background: #FF5EEA;
-    color: #0c0a13;
+    background: var(--accent-color);
+    color: var(--bg-color);
 }
 
-.menu a:hover .menu-icons-hover{
+.menu a:hover i{
     display: inline;
 }
 
-.menu a:hover .menu-icons{
-    display: none;
-}
-
-.menu-icons{
+.fa-solid{
     width: 1.3rem;
     margin-right: 0.5rem;
-}
-
-.menu-icons-large-hover{
-    width: 1.3rem;
-    margin-right: 0.5rem;
-    display: none;
-}
-
-.menu-icons-hover{
-    width: 1.3rem;
-    margin-right: 0.5rem;
-    display:none;
 }
 
 /* Show menu when hamburger is clicked/ 
@@ -114,10 +119,10 @@ img[alt="Leah's Logo"]{
 .home-content {
     width: 100%;
     height: auto;
-    background-color: #382cbc;
-    background-image: linear-gradient(to bottom, #382cbc, #292256, #0c0a13);
-    padding: 6rem 0rem 4rem 2rem;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    background-image: linear-gradient(to bottom, var(--primary-color), var(--secondary-color), var(--bg-color));
+    padding: 2rem 0rem 4rem 2rem;
+    color: var(--text-color);
 }
 
 .home-content h1{
@@ -134,18 +139,7 @@ img[alt="Leah's Logo"]{
 
 .home-content h2 span{
     font-weight: 700;
-    color: #FF5EEA;
-}
-
-.social-icons{
-    display: flex;
-    gap: 2.2rem;
-    padding-top: 4rem;
-}
-
-
-.social-icons img{
-    width: 1.5rem;
+    color: var(--accent-color);
 }
 
 .home-content h3{
@@ -153,13 +147,11 @@ img[alt="Leah's Logo"]{
     font-size: 1.3rem;
 }
 
-.home-content li{
-    color: #ffffff;
-    font-size: 1.1rem;
-}
-
-.home-content ul{
-    padding-left: 1.2rem;
+.social-icons i{
+    width: 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    
 }
 
 /* About Section */
@@ -211,20 +203,9 @@ img[alt="Picture of Leah Basson"]{
     color: #FF5EEA;
 }
 
-.menu a:hover .menu-icons-hover{
-    display: none;
-}
-
-.menu a:hover .menu-icons-large-hover{
-    display: block;
-}
 
 img[alt="Leah's Logo"]{
     width: 5rem;
-}
-
-.social-icons{
-    padding-top: 2rem;
 }
 
 /* Home Section */
